@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table border="10" cellspacing="10" align="center">
+      <tr>
+        <td>10</td>
+        <td>10</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>10</td>
+        <td>10</td>
+      </tr>
+    </table>
+    <table
+      style="
+        border: 4px solid red;
+        padding: 5px;
+        font-size: 50px;
+
+        text-align: center;
+        align-items: center;
+        margin: auto;
+        max-width: 500px;
+        width: 100%;
+      "
+    >
+      <thead style="width: 100%; padding: 15px">
+        <td>numbers</td>
+      </thead>
+      <tbody style="background-color: green; border: 2px dashed yellow">
+        <script>
+          var arr = [10, 5, 20, 30, 18, 1, 5, 20, 30, 18];
+          for (var i = 0; i < arr.length; i++) {
+            document.write("<tr ><td>" + arr[i] + "</td><tr>");
+          }
+        </script>
+      </tbody>
+      <tfoot style="background-color: red">
+        <script>
+          var sum = 0;
+          for (var i = 0; i < arr.length; i++) {
+            sum += arr[i];
+          }
+          document.write("<tr ><td>" + sum + "</td><tr>");
+        </script>
+      </tfoot>
+    </table>
+    <script></script>
+  </body>
+</html>
