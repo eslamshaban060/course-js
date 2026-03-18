@@ -15,11 +15,7 @@
           : (maxLentgth = numbers[i].toString().length);
       }
       for (var i = 0; i < numbers.length; i++) {
-        document.write(
-          "<h1>" +
-            numbers[i].toFixed(maxLentgth - numbers[i].toString().length) +
-            "</h1>",
-        );
+        document.write("<h1>" + numbers[i].toPrecision(maxLentgth) + "</h1>");
       }
     </script>
   </body>
