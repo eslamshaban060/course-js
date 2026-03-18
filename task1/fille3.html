@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var arr = [];
+
+      for (var i = 0; i < 3; i++) {
+        data = +prompt(" Enter value of index :" + i);
+        typeof data == "number" ? (arr[i] = data) : alert("enter vailde data ");
+      }
+      if (arr.length == 3) {
+        document.write("<h1> sum = " + (arr[0] + arr[1] + arr[2]) + "</h1>");
+        document.write("<h1> mult = " + arr[0] * arr[1] * arr[2] + "</h1>");
+        document.write("<h1> division = " + arr[0] / arr[1] / arr[2] + "</h1>");
+      }
+    </script>
+  </body>
+</html>

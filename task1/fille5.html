@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var numbers = [1, 12, 1.23];
+      var maxLentgth = 0;
+      for (var i = 0; i < numbers.length; i++) {
+        maxLentgth > numbers[i].toString().length
+          ? (maxLentgth = maxLentgth)
+          : (maxLentgth = numbers[i].toString().length);
+      }
+      for (var i = 0; i < numbers.length; i++) {
+        document.write(
+          "<h1>" +
+            numbers[i].toFixed(maxLentgth - numbers[i].toString().length) +
+            "</h1>",
+        );
+      }
+    </script>
+  </body>
+</html>

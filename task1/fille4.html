@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var qusations = [
+        "enter your name please :",
+        "enter your image please :",
+        "enter your color please :",
+      ];
+      var answer = [];
+      for (var i = 0; i < 3; i++) {
+        answer[i] = prompt(qusations[i]);
+      }
+    </script>
+    <script>
+      document.write(`<h2 style="color: ${answer[2]}" class="text">   ${answer[0]}</h2>
+      <div style="border: 12px solid ${answer[2]}; width: 500px; height: 500px">
+        <img
+          style="width: 500px; height: 500px"
+          class="thimge"
+          src="./images/${answer[1]}.png"
+          alt=""
+        />
+      </div>`);
+    </script>
+  </body>
+</html>
